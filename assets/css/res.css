@@ -1,4 +1,5 @@
-@media (max-width: 1400px) {}
+@media (max-width: 1400px) {
+}
 
 @media (max-width: 1200px) {
     .container {
@@ -6,7 +7,7 @@
     }
 
     .header .navbar ul li a {
-        font-family: "yekan-bakh-medium";
+        font-family: var(--font-family);
         margin-left: 15px;
         font-size: 1rem;
         color: var(--textGray);
@@ -166,7 +167,6 @@
     }
 
 
-
 }
 
 @media (max-width: 576px) {
@@ -205,5 +205,12 @@
     .progress .progress-title h2 {
         margin: 35px 0;
         font-size: 1.3rem;
+    }
+
+    .header .navbar-side {
+
+        width: 68%;
+
+
     }
 }

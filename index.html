@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Siteteme</title>
     <link rel="stylesheet" href="assets/css/fonts.css">
@@ -13,115 +13,130 @@
 </head>
 
 <body>
-    <header id="header">
-        <div class="container">
-            <div class="header">
-                <div class="menu-hamburger">
-                    <img src="assets/img/Hamburger_icon.svg.png" alt="">
-                </div>
-                <div class="logo">
-                    <a href="#">
-                        <img src="./assets/img/logo.svg" alt="logo">
-                    </a>
-                </div>
-                <div class="navbar">
+<header id="header">
+    <div class="container">
+        <div class="header">
+            <div class="menu-hamburger" onclick="showMenu()">
+                <img src="assets/img/Hamburger_icon.svg.png" alt="">
+            </div>
+            <div class="logo">
+                <a href="#">
+                    <img src="./assets/img/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="navbar-side">
 
-                    <ul>
-                        <li><a href="">سایت تیمی</a></li>
-                        <li><a href="">آکادمی</a></li>
-                        <li><a href="">خدمات</a></li>
-                        <li><a href="">ارتباط با ما</a></li>
-                        <li><a href="">تماس با ما</a></li>
-                    </ul>
-                </div>
-                <div class="search-bar">
-                    <form action="">
-                        <label for="search"></label>
-                        <input id="search" type="text" placeholder="آن چیزی  راکه دوست دارید جست و جو کنید...">
-                        <img src="/assets/img/search.png" alt="">
-                    </form>
-                </div>
-                <div class="account">
-                    <img src="/assets/img/circle-user.png" alt="">
-                </div>
-                <div class="cart">
-                    <img src="/assets/img/cart-2.svg" alt="">
-                </div>
+                <ul>
+                    <span class="icon-close" onclick="closeMenuIcon()">
+                        <img src="/assets/img/close-icon.svg" alt="">
+                    </span>
+                    <li><a href="">سایت تیمی</a></li>
+                    <li><a href="">آکادمی</a></li>
+                    <li><a href="">خدمات</a></li>
+                    <li><a href="">ارتباط با ما</a></li>
+                    <li><a href="">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="navbar">
+
+                <ul>
+                    <li><a href="">سایت تیمی</a></li>
+                    <li><a href="">آکادمی</a></li>
+                    <li><a href="">خدمات</a></li>
+                    <li><a href="">ارتباط با ما</a></li>
+                    <li><a href="">تماس با ما</a></li>
+                </ul>
+            </div>
+            <div class="search-bar">
+                <form action="">
+                    <label for="search"></label>
+                    <input id="search" type="text" placeholder="آن چیزی  راکه دوست دارید جست و جو کنید...">
+                    <img src="/assets/img/search.png" alt="">
+                </form>
+            </div>
+            <div class="account">
+                <img src="/assets/img/circle-user.png" alt="">
+            </div>
+            <div class="cart">
+                <img src="/assets/img/cart-2.svg" alt="">
             </div>
         </div>
-    </header>
-    <section id="intro">
+    </div>
+</header>
+<section id="intro">
 
-        <div class="container">
-            <div class="intro">
-                <div class="intro-right">
-                    <h1><span>سایت تیمی</span>؛ آژانــس حرفـــه ای
-                        دیــــجیتــــــال مــــــارکــــــتـیـنـگ</h1>
-                    <p>با سایــت تیمی کــسب و کار خود را ویترین کنید. امــروزه با ورود اینترنت به زنــدگی مردم اکــثر
-                        کسب و
-                        کار ها به سمــت اینترنتی شـــدن پیـــش مــی روند. در ایــن مــسابقه تنـها کسانی مـــوفق مـــی
-                        شوند
-                        که دو اصــــل سرعـــت و کـــیفیت را در نظر بــــگیرند. با سایت تیـــمی می توانید کــسب و کـــار
-                        خـود
-                        را با مناسب ترین قیـــمت و بالاتـــرین کیــفیت ایــنترنتی کـــنید.</p>
-                    <div class="intro-right-btn">
-                        <button>
-                            <span>مشاوره رایگان</span>
-                            <span><img src="/assets/img/نشان.svg" alt=""></span>
-                        </button>
-                        <button>
-                            <span> خدمات ما</span>
-                            <span><svg width="13" height="12" viewBox="0 0 13 12" xmlns="http://www.w3.org/2000/svg">
+    <div class="container">
+        <div class="intro">
+            <div class="intro-right">
+                <h1><span>سایت تیمی</span>؛ آژانــس حرفـــه ای
+                    دیــــجیتــــــال مــــــارکــــــتـیـنـگ</h1>
+                <p>با سایــت تیمی کــسب و کار خود را ویترین کنید. امــروزه با ورود اینترنت به زنــدگی مردم اکــثر
+                    کسب و
+                    کار ها به سمــت اینترنتی شـــدن پیـــش مــی روند. در ایــن مــسابقه تنـها کسانی مـــوفق مـــی
+                    شوند
+                    که دو اصــــل سرعـــت و کـــیفیت را در نظر بــــگیرند. با سایت تیـــمی می توانید کــسب و کـــار
+                    خـود
+                    را با مناسب ترین قیـــمت و بالاتـــرین کیــفیت ایــنترنتی کـــنید.</p>
+                <div class="intro-right-btn">
+                    <button>
+                        <span>مشاوره رایگان</span>
+                        <span><img src="/assets/img/نشان.svg" alt=""></span>
+                    </button>
+                    <button>
+                        <span> خدمات ما</span>
+                        <span><svg width="13" height="12" viewBox="0 0 13 12" xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M12 6.74994C12.4142 6.74994 12.75 6.41415 12.75 5.99994C12.75 5.58573 12.4142 5.24994 12 5.24994L12 6.74994ZM0.46967 5.46961C0.176777 5.7625 0.176777 6.23738 0.46967 6.53027L5.24264 11.3032C5.53553 11.5961 6.01041 11.5961 6.3033 11.3032C6.59619 11.0103 6.59619 10.5355 6.3033 10.2426L2.06066 5.99994L6.3033 1.7573C6.59619 1.46441 6.59619 0.989532 6.3033 0.696639C6.01041 0.403745 5.53553 0.403745 5.24264 0.696639L0.46967 5.46961ZM12 5.24994L1 5.24994L1 6.74994L12 6.74994L12 5.24994Z" />
+                                            d="M12 6.74994C12.4142 6.74994 12.75 6.41415 12.75 5.99994C12.75 5.58573 12.4142 5.24994 12 5.24994L12 6.74994ZM0.46967 5.46961C0.176777 5.7625 0.176777 6.23738 0.46967 6.53027L5.24264 11.3032C5.53553 11.5961 6.01041 11.5961 6.3033 11.3032C6.59619 11.0103 6.59619 10.5355 6.3033 10.2426L2.06066 5.99994L6.3033 1.7573C6.59619 1.46441 6.59619 0.989532 6.3033 0.696639C6.01041 0.403745 5.53553 0.403745 5.24264 0.696639L0.46967 5.46961ZM12 5.24994L1 5.24994L1 6.74994L12 6.74994L12 5.24994Z"/>
                                 </svg>
                             </span>
-                        </button>
-                    </div>
+                    </button>
                 </div>
-                <div class="intro-left">
-                    <img src="/assets/img/img-header.svg" alt="">
+            </div>
+            <div class="intro-left">
+                <img src="/assets/img/img-header.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="progress">
+    <div class="container">
+        <div class="progress">
+            <div class="progress-title">
+                <h2>مـــــا چــــگونه بــــه پیـــشرفت شـــما کـــمک مــــی‌کنیـــم؟</h2>
+            </div>
+            <div class="progress-items">
+                <div class="progress-item">
+                    <img src="/assets/img/16.%20coding-a-website-3.png" alt="">
+                    <h3>راهکارهـای بهبود تجربه کاربـری</h3>
+                    <p>ارائــه جدیــدتریــن تکـــنیک‌هــای
+                        افزایـــــش<br> فــــروش و ســـودآوری</p>
+                </div>
+                <div class="progress-item arrow-blue">
+                    <img src="/assets/img/arrow-left.png" alt="">
+                </div>
+                <div class="progress-item">
+                    <img src="/assets/img/12.%20business-deal-1.svg" alt="">
+                    <h3>تدوین استراتژی و مسیر موفقیت</h3>
+                    <p>حـرکـــت به سمــــت بـه اهـــــــداف
+                        با یــــک <br>ذهــــنیـــــــت درســــــت...</p>
+                </div>
+                <div class="progress-item arrow-red">
+                    <img src="/assets/img/Vector.png" alt="">
+                </div>
+                <div class="progress-item">
+                    <img src="/assets/img/yellow.svg" alt="">
+                    <h3>ارائه متدهای جــدید کســب و کـار</h3>
+                    <p>بررســی حـــوزه فعـــالــیت و ارائـــه
+                        روش‌هــای <br>نویــن کــســب درآمــد</p>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-    </section>
-    <section id="progress">
-        <div class="container">
-            <div class="progress">
-                <div class="progress-title">
-                    <h2>مـــــا چــــگونه بــــه پیـــشرفت شـــما کـــمک مــــی‌کنیـــم؟</h2>
-                </div>
-                <div class="progress-items">
-                    <div class="progress-item">
-                        <img src="/assets/img/16.%20coding-a-website-3.png" alt="">
-                        <h3>راهکارهـای بهبود تجربه کاربـری</h3>
-                        <p>ارائــه جدیــدتریــن تکـــنیک‌هــای
-                            افزایـــــش<br> فــــروش و ســـودآوری</p>
-                    </div>
-                    <div class="progress-item arrow-blue">
-                        <img src="/assets/img/arrow-left.png" alt="">
-                    </div>
-                    <div class="progress-item">
-                        <img src="/assets/img/12.%20business-deal-1.svg" alt="">
-                        <h3>تدوین استراتژی و مسیر موفقیت</h3>
-                        <p>حـرکـــت به سمــــت بـه اهـــــــداف
-                            با یــــک <br>ذهــــنیـــــــت درســــــت...</p>
-                    </div>
-                    <div class="progress-item arrow-red">
-                        <img src="/assets/img/Vector.png" alt="">
-                    </div>
-                    <div class="progress-item">
-                        <img src="/assets/img/yellow.svg" alt="">
-                        <h3>ارائه متدهای جــدید کســب و کـار</h3>
-                        <p>بررســی حـــوزه فعـــالــیت و ارائـــه
-                            روش‌هــای <br>نویــن کــســب درآمــد</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
+<script src="assets/js/main.js"></script>
 </body>
 
 </html>
