@@ -1,0 +1,209 @@
+@media (max-width: 1400px) {}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 98%;
+    }
+
+    .header .navbar ul li a {
+        font-family: "yekan-bakh-medium";
+        margin-left: 15px;
+        font-size: 1rem;
+        color: var(--textGray);
+        transition: var(--transition);
+    }
+
+    .header .search-bar {
+        background: var(--bgBox);
+        padding: 5px 16px;
+        width: 281px;
+        height: 48px;
+        margin-left: 15px;
+        display: flex;
+        border: var(--stroke2);
+        border-radius: 5px;
+    }
+
+
+    .header .search-bar form img {
+        height: 20px;
+        position: relative;
+        top: 8px;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .navbar ul {
+        display: none;
+        /* background: red; */
+        height: 100%;
+    }
+
+    .menu-hamburger img {
+        width: 100%;
+        max-width: 38px;
+        display: block;
+        margin-left: 15px;
+        margin-top: -3px;
+    }
+
+    .progress {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+
+    }
+
+    .progress .progress-items {
+        display: grid;
+        grid-template-columns: auto;
+        justify-items: center;
+        align-items: baseline;
+        gap: 30px;
+    }
+
+    .progress .progress-items .progress-item {
+        width: auto;
+    }
+
+    .arrow-blue {
+        align-self: flex-start;
+        margin-top: 0;
+        display: none;
+    }
+
+    .arrow-red {
+        align-self: flex-start;
+        margin-top: 0;
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .search-bar {
+        background: var(--bgBox);
+        padding: 5px 16px;
+        width: 281px;
+        height: 48px;
+        margin-left: 15px;
+        border: var(--stroke2);
+        border-radius: 5px;
+        display: none;
+    }
+
+    #intro .intro {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #intro .intro .intro-right h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        width: 78%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #intro .intro .intro-right p {
+        width: auto;
+        padding: 0 7px;
+        text-align: justify;
+        line-height: 1.7rem;
+        font-size: .8rem;
+        margin: 0 auto;
+    }
+
+    #intro .intro .intro-right .intro-right-btn {
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    #intro .intro .intro-right .intro-right-btn a:first-child {
+        background: var(--colorSecondry);
+        color: #fff;
+        padding: 7px 15px;
+        border-radius: 5px;
+        border: 1px solid var(--colorSecondry);
+        max-width: 100%;
+        display: block;
+        text-align: center;
+        margin: 0 8px;
+    }
+
+    #intro .intro .intro-right .intro-right-btn a:last-child {
+        color: var(--colorSecondry);
+        border: 1px solid var(--colorSecondry);
+        padding: 7px 15px;
+        border-radius: 5px;
+        max-width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    #intro .intro .intro-right .intro-right-btn {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #intro .intro .intro-right {
+        width: 100%;
+
+        padding: 15px;
+    }
+
+    #intro .intro .intro-left {
+        width: 100%;
+        text-align: end;
+    }
+
+    #intro .intro .intro-left img {
+        max-width: 100%;
+    }
+
+
+
+}
+
+@media (max-width: 576px) {
+    .header .logo img {
+        width: 114px;
+        margin-top: 5px;
+    }
+
+    .menu-hamburger img {
+        width: 100%;
+        max-width: 33px;
+        display: block;
+        margin-left: 15px;
+        margin-top: 1px;
+    }
+
+    .account img {
+        background: var(--colorPrimary);
+        padding: 6px 6px;
+        border-radius: 5px;
+    }
+
+    .cart img {
+        background: var(--colorPrimary);
+        padding: 6px 6px;
+        border-radius: 5px;
+    }
+
+    #intro .intro .intro-right h1 {
+        font-size: 2rem;
+        font-weight: 700;
+        width: auto;
+        text-align: center;
+    }
+
+    .progress .progress-title h2 {
+        margin: 35px 0;
+        font-size: 1.3rem;
+    }
+}
