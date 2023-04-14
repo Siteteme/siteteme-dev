@@ -1,7 +1,7 @@
 @media (max-width: 1400px) {
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1220px) {
     .container {
         width: 98%;
     }
@@ -77,6 +77,26 @@
         align-self: flex-start;
         margin-top: 0;
         display: none;
+    }
+
+    #courses .courses .courses-items {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    #courses .courses .courses-items .courses-item {
+        border: 1px solid #F0F0F0;
+        padding: 12px;
+        border-radius: 5px;
+        background: #fff;
+        margin: 0 auto;
+        display: flex;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -164,6 +184,24 @@
 
     #intro .intro .intro-left img {
         max-width: 100%;
+    }
+    #courses .courses .courses-items {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+        width: 100%;
+        gap: 15px;
+    }
+    #courses .courses .courses-items .courses-item {
+        border: 1px solid #F0F0F0;
+        padding: 12px;
+        border-radius: 5px;
+        background: #fff;
+        margin: 0 auto;
+        display: flex;
+        /*width:500px;*/
+        flex-direction: column;
+        align-items: center;
     }
 
 

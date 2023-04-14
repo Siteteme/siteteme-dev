@@ -4,11 +4,33 @@
     --bgBox: #FAFAFA;
     --textDesc: #7B7B7B;
     --textGray: #ABADB9;
+    --btnGray: #EAEAEA;
     --stroke: #D3D5D9;
     --stroke2: #E9E9EB;
     --transition: all .3s ease;;
     --font-family: yekanbakh, serif;
 }
+
+.btn-gray {
+    display: flex;
+    background: var(--btnGray);
+    color: var(--colorPrimary);
+    padding: 7px 15px;
+    border-radius: 5px;
+    margin-left: 5px;
+    border: 1px solid var(--btnGray);
+    font-family: var(--font-family);
+    transition: var(--transition);
+}
+
+.btn-gray span svg {
+    position: relative;
+    top: 4px;
+    left: -7px;
+    fill: var(--colorPrimary);
+
+}
+
 
 * {
     margin: 0;
@@ -31,7 +53,7 @@ ul {
 }
 
 .container {
-    width: 1270px;
+    width: 1220px;
     margin: 0 auto;
 }
 
@@ -113,7 +135,7 @@ header {
     transition: var(--transition);
 }
 
-.header .navbar-side.active{
+.header .navbar-side.active {
     display: block;
     opacity: 1;
     transform: translate(0);
@@ -141,8 +163,8 @@ header {
     right: 84%;
 }
 
-.navbar-side .icon-close img{
-    width: min(100%,35px);
+.navbar-side .icon-close img {
+    width: min(100%, 35px);
 
 
 }
@@ -363,4 +385,134 @@ header {
 
 .progress .arrow-red {
     align-self: flex-start;
+}
+
+/*courses*/
+
+#courses {
+    width: 100%;
+    height: 900px;
+}
+
+#courses .courses .courses-title {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+
+
+#courses .courses .courses-items {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px;
+}
+
+#courses .courses .courses-items .courses-item {
+    border: 1px solid #F0F0F0;
+    padding: 12px;
+    border-radius: 5px;
+    background: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#courses .courses .courses-items .courses-item img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+#courses .courses .courses-items .courses-item a {
+    text-align: center;
+    color: var(--colorPrimary);
+    font-family: var(--font-family);
+    width: 268px;
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#courses .courses .courses-items .courses-item a h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-overflow: ellipsis;
+}
+
+#courses .courses .courses-items .courses-item .course-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FAFAFA;
+    padding: 6px;
+    border-radius: 5px;
+    margin: 10px 0;
+    height: 66px;
+    align-self: normal;
+}
+
+#courses .courses .courses-items .courses-item .course-desc .Release-time {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    color: #BEC3CB;
+    text-align: center;
+}
+
+#courses .courses .courses-items .courses-item .course-desc .Release-time div span{
+    font-weight: 700;
+    font-family: YekanBakhFaNum, serif;
+    color: var(--colorPrimary);
+}
+
+#courses .courses .courses-items .courses-item .course-desc .number-Student {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #BEC3CB;
+    text-align: center;
+}
+#courses .courses .courses-items .courses-item .course-desc .number-Student div span {
+    font-weight: 700;
+    font-family: YekanBakhFaNum, serif;
+    color: var(--colorPrimary);
+}
+
+#courses .courses .courses-items .courses-item .course-desc .price {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #BEC3CB;
+    text-align: center;
+
+}
+
+#courses .courses .courses-items .courses-item .course-desc .price div span  {
+    font-weight: 700;
+    font-family: YekanBakhFaNum, serif;
+    color: var(--colorPrimary);
+}
+
+#courses .courses .courses-items .courses-item .view-course {
+    width: 100%;
+    height: 42px;
+    border: none;
+    margin-top: 15px;
+    font-family: var(--font-family);
+    font-size: 18px;
+    border-radius: 7px;
+    background: var(--colorPrimary);
+    color: #fff;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+#courses .courses .courses-items .courses-item .view-course:hover{
+    background: var(--colorSecondry);
 }
