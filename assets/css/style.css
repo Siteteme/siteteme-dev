@@ -60,6 +60,7 @@ ul {
 header {
     background: #FAFAFA;
     padding: 25px 0;
+
 }
 
 .header {
@@ -109,6 +110,10 @@ header {
     height: 100%;
 }
 
+.header .navbar ul li {
+    position: relative;
+}
+
 .header .navbar ul li a {
     font-family: var(--font-family);
     margin-left: 15px;
@@ -150,16 +155,62 @@ header {
 .header .navbar-side ul li {
     padding: 15px 5px;
 
+
 }
 
 .header .navbar-side ul li a {
     color: var(--colorPrimary);
 }
 
+
+/*submenu*/
+.navbar #submenu {
+    position: absolute;
+    background: var(--colorPrimary);
+    border-radius: 7px;
+    display: flex;
+    height: auto;
+    align-items: start;
+    justify-content: start;
+    flex-wrap: wrap;
+    padding: 8px;
+    margin-top: 150px;
+    opacity: 0;
+    transition: var(--transition);
+    width: 311px;
+}
+
+.active-submenu{
+    margin-top: 15px !important;
+    opacity: 1 !important;
+    transition: var(--transition);
+
+}
+
+
+.navbar #submenu li {
+    text-align: center;
+    width: auto;
+    background: var(--btnGray);
+    margin: 9px 7px;
+    border-radius: 5px;
+}
+.navbar #submenu li:last-child{
+    align-self: self-start;
+}
+
+.navbar #submenu li a {
+    text-align: center;
+    height: 100%;
+    padding: 7px;
+    display: block;
+    width: 100%;
+}
+
 /*navbar-side*/
 .navbar-side .icon-close {
     position: absolute;
-
+    cursor: pointer;
     right: 84%;
 }
 
@@ -430,6 +481,7 @@ header {
     right: 0;
     top: 80px;
 }
+
 #courses .courses .courses-items .courses-item {
     border: 1px solid #F0F0F0;
     padding: 12px;
@@ -566,7 +618,7 @@ header {
 #project .project .project-items .project-item {
     background: #ffff;
     padding: 14px;
-    border:1px solid #E5E5E5;
+    border: 1px solid #E5E5E5;
     border-radius: 5px;
 }
 
