@@ -1,10 +1,10 @@
 const navbarSide = document.querySelector(".navbar-side");
 const HamburgerMenu = document.querySelector(".menu-hamburger");
 const closeMenu = document.querySelector(".icon-close")
-
 const subMenu = document.querySelector("#submenu");
-
 const itemLi = document.querySelectorAll(".item-li")
+
+
 
 
 function showMenu() {
@@ -22,7 +22,6 @@ function closeMenuIcon() {
     })
 }
 
-
 itemLi.forEach((item) => {
 
     item.addEventListener("click", (e) => {
@@ -32,3 +31,35 @@ itemLi.forEach((item) => {
     })
 
 })
+
+
+
+
+const closeCounseling = document.querySelector("#close-counseling");
+
+const counseling = document.querySelector(".counseling");
+
+const btnCounseling = document.querySelector("#counseling-btn");
+
+
+function showCounseling() {
+    btnCounseling.addEventListener("click",()=>{
+      counseling.classList.add("active-counseling")
+    })
+
+}
+
+function ClosCounseling() {
+    closeCounseling.addEventListener("click", () => {
+        counseling.classList.remove("active-counseling");
+
+    })
+}
+
+
+//
+// let userName = document.forms["form-counseling"]["name"].value
+// let lastName = document.forms["form-counseling"]["lastname"].value
+// let phone = document.forms["form-counseling"]["phone"].value
+// let email = document.forms["form-counseling"]["email"].value
+//

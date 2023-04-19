@@ -166,7 +166,7 @@ header {
 /*submenu*/
 .navbar #submenu {
     position: absolute;
-    background: var(--colorPrimary);
+    background: var(--bgBox);
     border-radius: 7px;
     display: flex;
     height: auto;
@@ -177,25 +177,28 @@ header {
     margin-top: 150px;
     opacity: 0;
     transition: var(--transition);
-    width: 311px;
+    width: 432px;
+    z-index: 2;
+    visibility: hidden;
 }
 
-.active-submenu{
+.active-submenu {
     margin-top: 15px !important;
     opacity: 1 !important;
     transition: var(--transition);
-
+    visibility: visible !important;
 }
 
 
 .navbar #submenu li {
     text-align: center;
-    width: auto;
     background: var(--btnGray);
     margin: 9px 7px;
     border-radius: 5px;
+    width: 45%;
 }
-.navbar #submenu li:last-child{
+
+.navbar #submenu li:last-child {
     align-self: self-start;
 }
 
@@ -205,6 +208,10 @@ header {
     padding: 7px;
     display: block;
     width: 100%;
+}
+
+.navbar #submenu li:hover a {
+    color: var(--colorPrimary) !important;
 }
 
 /*navbar-side*/
@@ -315,9 +322,80 @@ header {
     justify-content: space-between;
 }
 
+
+.intro-right .counseling {
+    text-align: center;
+    width: 100%;
+    background: var(--bgBox);
+    top: -800px;
+    bottom: 0;
+    right: 300px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 8%);
+    position: absolute;
+    opacity: 0;
+    transition: var(--transition);
+    height: 300px;
+    visibility: hidden;
+}
+
+.active-counseling {
+    top: 150px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.intro-right .counseling img {
+    position: absolute;
+    width: 100%;
+    max-width: 30px;
+    left: 9px;
+    top: 18px;
+}
+
+
+.intro-right .counseling form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.intro-right .counseling form div {
+    width: 40%;
+    margin: 5px;
+}
+
+.intro-right .counseling form div input {
+    width: 100%;
+    border: none;
+    background: #fff;
+    margin: 10px;
+    font-family: var(--font-family);
+    padding: 12px;
+    display: block;
+    outline: none;
+}
+
+.intro-right .counseling form div input#submit {
+    background: var(--colorPrimary);
+    color: #FAFAFA;
+    border-radius: 5px;
+    border: none;
+    transition: var(--transition);
+}
+
+.intro-right .counseling form div input#submit:hover {
+    background: var(--colorSecondry);
+}
+
 #intro .intro .intro-right {
     align-self: center;
     width: 50%;
+    position: relative;
 }
 
 #intro .intro .intro-right h1 {

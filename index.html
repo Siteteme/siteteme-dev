@@ -44,10 +44,10 @@
                     <li class="item-li"><a href="#">آکادمی</a></li>
                     <li class="item-li"><a href="#">خدمات</a>
                         <ul id="submenu">
-                            <li><a href="">بهینه سازی سرعت</a></li>
-                            <li><a href="">بهینه سازی سرعت</a></li>
-                            <li><a href="">بهینه سازی سرعت</a></li>
-                            <li><a href="">بهینه سازی سرعت</a></li>
+                            <li><a href="">طراحی سایت</a></li>
+                            <li><a href="">استراتژی سئو</a></li>
+                            <li><a href="">تولید محتوای سئو شده</a></li>
+                            <li><a href="">طراحی رابط کاربری</a></li>
                             <li><a href="">بهینه سازی سرعت</a></li>
                         </ul>
                     </li>
@@ -76,6 +76,36 @@
     <div class="container">
         <div class="intro">
             <div class="intro-right">
+
+                <div class="counseling">
+                    <h2>برای درخواست مشاوره رایگان لطفا فرم زیر را پر کنید</h2>
+                    <img src="/assets/img/close-icon.svg" alt="close-icon" id="close-counseling" onclick="ClosCounseling()">
+                    <form action="/https://google.com" method="post" id="form-counseling">
+                        <div>
+                            <label for="name"></label>
+                            <input name="name" type="text" placeholder="نام" id="name" required>
+                        </div>
+                        <div>
+                            <label for="lastname"></label>
+                            <input name="lastname" type="text" placeholder="نام خانوادگی" id="lastname" required>
+                        </div>
+                        <div>
+                            <label for="phone"></label>
+                            <input name="phone" type="tel" placeholder="شماره تماس" id="phone" pattern="[0-9]{11}" required>
+                        </div>
+
+                        <div>
+                            <label for="email"></label>
+                            <input name="email" type="email" placeholder="ایمیل" id="email" required>
+                        </div>
+
+                        <div>
+                            <input name="submit" type="submit" value="ارسال درخواست" id="submit" >
+                        </div>
+                    </form>
+
+                </div>
+
                 <h1><span>سایت تیمی</span>؛ آژانــس حرفـــه ای
                     دیــــجیتــــــال مــــــارکــــــتـیـنـگ</h1>
                 <p>با سایــت تیمی کــسب و کار خود را ویترین کنید. امــروزه با ورود اینترنت به زنــدگی مردم اکــثر
@@ -86,7 +116,7 @@
                     خـود
                     را با مناسب ترین قیـــمت و بالاتـــرین کیــفیت ایــنترنتی کـــنید.</p>
                 <div class="intro-right-btn">
-                    <button>
+                    <button id="counseling-btn" onclick="showCounseling()">
                         <span>مشاوره رایگان</span>
                         <span><img src="/assets/img/نشان.svg" alt=""></span>
                     </button>
