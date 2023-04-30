@@ -192,6 +192,23 @@
         max-width: 100%;
     }
 
+    .intro-right .counseling {
+        text-align: center;
+        width: 78%;
+        background: var(--bgBox);
+        top: -800px;
+        bottom: 0;
+        right: 93px;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 8%);
+        position: absolute;
+        opacity: 0;
+        transition: var(--transition);
+        height: 300px;
+        visibility: hidden;
+        z-index: 2;
+    }
 
 
 }
@@ -254,10 +271,22 @@
         gap: 15px;
         position: relative;
     }
+
     #courses .courses .courses-items .author img {
         position: absolute;
         right: 0;
         top: 110px;
     }
+
+    .intro-right .counseling {
+
+        right: 50px;
+
+    }
+
+    .intro-right .counseling h2 {
+        font-size: 15px;
+    }
+
 
 }

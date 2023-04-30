@@ -47,6 +47,11 @@ a {
     text-decoration: none;
     font-family: var(--font-family)
 }
+img{
+    /*max-width: 100%;*/
+    /*width: 100%;*/
+    /*object-fit: cover;*/
+}
 
 ul {
     list-style: none;
@@ -230,7 +235,7 @@ header {
 .header .search-bar {
     background: var(--bgBox);
     padding: 5px 16px;
-    width: 360px;
+    width: 55px;
     height: 40px;
     margin: 0 14px;
     display: flex;
@@ -239,6 +244,9 @@ header {
     transition: var(--transition);
 }
 
+.header .search-bar.active{
+    width: 400px;
+}
 .header .search-bar form {
     display: flex;
     align-self: center;
@@ -570,7 +578,7 @@ header {
     position: relative;
 }
 
-#project .project .project-items .project-item img {
+#courses .courses .courses-items .courses-item img {
     width: 100%;
     border-radius: 5px;
     object-fit: fill;

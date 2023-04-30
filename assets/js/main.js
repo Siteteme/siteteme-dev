@@ -4,9 +4,11 @@ const closeMenu = document.querySelector(".icon-close")
 const subMenu = document.querySelector("#submenu");
 const itemLi = document.querySelectorAll(".item-li")
 
+const searchBarDiv = document.querySelector(".search-bar");
+const searchBarImg = document.querySelector(".search-bar img");
 
 
-
+// Functions
 function showMenu() {
     HamburgerMenu.addEventListener("click", () => {
         navbarSide.classList.add("active")
@@ -22,6 +24,15 @@ function closeMenuIcon() {
     })
 }
 
+
+function showSearchBar() {
+    searchBarImg.addEventListener("click", () => {
+        return searchBarDiv.classList.contains("active") ? searchBarDiv.classList.remove("active") : searchBarDiv.classList.add("active")
+    })
+}
+
+
+// eventListener
 itemLi.forEach((item) => {
 
     item.addEventListener("click", (e) => {
@@ -33,8 +44,6 @@ itemLi.forEach((item) => {
 })
 
 
-
-
 const closeCounseling = document.querySelector("#close-counseling");
 
 const counseling = document.querySelector(".counseling");
@@ -43,8 +52,8 @@ const btnCounseling = document.querySelector("#counseling-btn");
 
 
 function showCounseling() {
-    btnCounseling.addEventListener("click",()=>{
-      counseling.classList.add("active-counseling")
+    btnCounseling.addEventListener("click", (e) => {
+        counseling.classList.to("active-counseling")
     })
 
 }
