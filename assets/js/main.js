@@ -53,7 +53,7 @@ const btnCounseling = document.querySelector("#counseling-btn");
 
 function showCounseling() {
     btnCounseling.addEventListener("click", (e) => {
-        counseling.classList.to("active-counseling")
+        counseling.classList.toggle("active-counseling")
     })
 
 }
