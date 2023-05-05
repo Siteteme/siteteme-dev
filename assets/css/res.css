@@ -80,24 +80,16 @@
     }
 
 
-    #project .project .project-items {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 15px;
-        background: #FAFAFA;
-    }
-
-    #courses .courses .courses-items {
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 15px;
-        position: relative;
-    }
-
     #courses .courses .courses-items .author img {
         position: absolute;
         right: 0;
-        top: 127px;
+    }
+    #project .project .project-items {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit,minmax(auto,434px));
+        gap: 15px;
+        background: #FAFAFA;
     }
 
 }
@@ -205,9 +197,21 @@
         position: absolute;
         opacity: 0;
         transition: var(--transition);
-        height: 300px;
         visibility: hidden;
         z-index: 2;
+    }
+
+
+
+    #courses .courses .courses-items {
+
+
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit,minmax(auto,565px));
+    }
+    #courses .courses .courses-items .author img {
+
+        display: none;
     }
 
 
@@ -258,19 +262,7 @@
 
     }
 
-    #project .project .project-items {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 15px;
-        background: #FAFAFA;
-    }
 
-    #courses .courses .courses-items {
-        display: grid;
-        grid-template-columns: auto;
-        gap: 15px;
-        position: relative;
-    }
 
     #courses .courses .courses-items .author img {
         position: absolute;
@@ -285,7 +277,17 @@
     }
 
     .intro-right .counseling h2 {
-        font-size: 15px;
+        font-size: 12px;
+    }
+
+    .intro-right .counseling form div {
+        width: 100%;
+        margin: 5px;
+    }
+
+    .intro-right .counseling img {
+        left: 6px;
+        top: 8px;
     }
 
 

@@ -344,7 +344,7 @@ header {
     position: absolute;
     opacity: 0;
     transition: var(--transition);
-    height: 300px;
+    height:fit-content;
     visibility: hidden;
 }
 
@@ -548,7 +548,8 @@ header {
     /*gap: 15px;*/
 
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit,minmax(auto,290px));
     gap: 15px;
     position: relative;
 }
@@ -696,7 +697,8 @@ header {
 
 #project .project .project-items {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit,minmax(auto,290px));
     gap: 15px;
     background: #FAFAFA;
 }
