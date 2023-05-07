@@ -92,6 +92,19 @@
         background: #FAFAFA;
     }
 
+    #article .article-items {
+        display: grid;
+        /* grid-template-columns: grid-template-columns: repeat(auto-fit,minmax(auto,434px)); */
+        gap: 20px;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit,minmax(auto,434px));
+    }
+
+    #courses .courses .courses-items {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit,minmax(auto,434px));
+    }
+
 }
 
 @media (max-width: 880px) {
@@ -204,8 +217,6 @@
 
 
     #courses .courses .courses-items {
-
-
         justify-content: center;
         grid-template-columns: repeat(auto-fit,minmax(auto,565px));
     }

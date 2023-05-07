@@ -828,4 +828,14 @@ header {
     color: var(--colorPrimary);
     background: var(--bgBox);
     font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    transition: var(--transition);
+}
+
+
+#article .article-items .article-item:hover a{
+    background: var(--colorSecondry);
 }
