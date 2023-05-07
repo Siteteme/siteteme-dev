@@ -32,6 +32,14 @@
 }
 
 
+.title-section{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -47,7 +55,8 @@ a {
     text-decoration: none;
     font-family: var(--font-family)
 }
-img{
+
+img {
     /*max-width: 100%;*/
     /*width: 100%;*/
     /*object-fit: cover;*/
@@ -244,9 +253,10 @@ header {
     transition: var(--transition);
 }
 
-.header .search-bar.active{
+.header .search-bar.active {
     width: 400px;
 }
+
 .header .search-bar form {
     display: flex;
     align-self: center;
@@ -344,7 +354,7 @@ header {
     position: absolute;
     opacity: 0;
     transition: var(--transition);
-    height:fit-content;
+    height: fit-content;
     visibility: hidden;
 }
 
@@ -549,7 +559,7 @@ header {
 
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit,minmax(auto,290px));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 290px));
     gap: 15px;
     position: relative;
 }
@@ -695,10 +705,11 @@ header {
 }
 
 
+
 #project .project .project-items {
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit,minmax(auto,290px));
+    grid-template-columns: repeat(auto-fit, minmax(auto, 290px));
     gap: 15px;
     background: #FAFAFA;
 }
@@ -771,4 +782,50 @@ header {
 #project .project .project-items .project-item .detail-project .price-project span:last-child {
     font-weight: 700;
     font-size: 13px;
+}
+
+
+/*article*/
+
+
+#article{
+    height: 600px;
+}
+
+#article .article-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(auto, 290px));
+    gap: 20px;
+}
+#article .article-items .article-item{
+    border: 1px solid #E5E5E5;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 6px;
+}
+#article .article-items .article-item img{
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+#article .article-items .article-item h2{
+    color: var(--colorPrimary);
+    font-size: 18px;
+    margin:10px 0 5px 0;
+    font-weight: 700;
+}
+#article .article-items .article-item p{
+    color: #AAAEB5;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+#article .article-items .article-item a{
+    color: var(--colorPrimary);
+    background: var(--bgBox);
+    font-size: 20px;
 }
